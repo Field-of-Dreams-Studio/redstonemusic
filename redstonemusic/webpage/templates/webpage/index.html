@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+
+        let a = 0;
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("construct") 
+                .then(response => response.json())
+                .then(data => { 
+                    document.querySelector("h1").innerHTML = data.Aaa
+                }) 
+        })
+
+    </script> 
+</head> 
+
+<body> 
+    <h1></h1>
+</body>
+
+</html>
